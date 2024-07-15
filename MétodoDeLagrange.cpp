@@ -3,6 +3,8 @@
 #include <vector>
 #include <functional>
 using namespace std;
+#define e = 2.71828;
+#define pi = 3,14159;
 
 void linha(int num = 20, char ch = '=');
 function<double(double)> lagrange(const vector<double>& Xs, const vector<double>& Ys);

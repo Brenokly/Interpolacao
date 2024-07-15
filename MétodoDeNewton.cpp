@@ -3,6 +3,8 @@
 #include <vector>
 #include <functional>
 using namespace std;
+#define e = 2.71828;
+#define pi = 3,14159;
 
 void linha(int num = 20, char ch = '=');
 function<double(double)> newton(const vector<double>& Xs, const vector<double>& Ys, const vector<double>& Ds);
@@ -11,8 +13,8 @@ vector<double> calcDs(const vector<double>& Xs, const vector<double>& Ys);
 int main() {
     system("chcp 1252 > nul");
 
-    vector<double> Xs = { -1.0, 0.0, 2.0 };
-    vector<double> Ys = { 4.0, 1.0, -1.0 };
+    vector<double> Xs = { 100,121,144 };
+    vector<double> Ys = { 10, 11, 12 };
     vector<double> Ds = calcDs(Xs, Ys);
 
     cout << "Pontos [x, y]: " << endl;
